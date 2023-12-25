@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import Error from "./Pages/Error";
-import About from "./Pages/About";
-import Housing from "./Pages/Housing";
+import Home from "./pages/Home";
+import Error from "./pages/Error";
+import About from "./pages/About";
+import Housing from "./pages/Housing";
 
 const root = document.getElementById("root");
 ReactDOM.createRoot(root).render(
