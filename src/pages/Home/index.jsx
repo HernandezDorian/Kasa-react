@@ -1,5 +1,7 @@
+import Imgbar from "../../components/Imgbar";
+
 function Home() {
-  return <h1>Hello Home</h1>;
+  return <Imgbar text="test" img="" />;
 }
 
 export default Home;

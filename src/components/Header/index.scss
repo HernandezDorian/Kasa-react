@@ -1,0 +1,51 @@
+// List reset
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Header {
+  display: flex;
+  padding: 45px;
+  justify-content: space-between;
+  align-items: center;
+  &__menu {
+    display: flex;
+    gap: 57px;
+    &__li {
+      font-size: 24px;
+      color: #ff6060;
+      white-space: nowrap;
+    }
+  }
+  //   &__Logo {
+  //     &__Img {
+  //       width: 210px;
+  //       height: 68px;
+  //     }
+  //   }
+}
+
+@media (max-width: 560px) {
+  .Header {
+    padding: 20px;
+    justify-content: start;
+    gap: 43px;
+    &__menu {
+      gap: 26px;
+      &__li {
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+    &__Logo {
+      &__Img {
+        width: 145px;
+        height: 46.881px;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
