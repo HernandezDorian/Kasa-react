@@ -1,5 +1,4 @@
 import "./index.scss";
-import logement from "./../../logements.json";
 
 function Thumb({ text, img, className }) {
   return (
