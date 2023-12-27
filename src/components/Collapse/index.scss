@@ -1,0 +1,37 @@
+.Collapse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  &__Menu {
+    display: flex;
+    background-color: #ff6060;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 10px;
+    border-radius: 10px;
+    max-width: 1024px;
+    &__Title {
+      color: #fff;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 142.6%; /* 25.668px */
+      user-select: none;
+    }
+  }
+  &__Content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    background-color: #f6f6f6;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-self: start;
+      margin-left: auto;
+    }
+  }
+}

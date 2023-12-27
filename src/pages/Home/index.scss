@@ -16,5 +16,13 @@
     border-radius: 25px;
     background: #f6f6f6;
     margin-bottom: 50px;
+    @media (max-width: 1300px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media (max-width: 630px) {
+      background-color: white;
+    }
   }
 }
