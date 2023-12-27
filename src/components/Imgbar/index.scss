@@ -1,0 +1,48 @@
+.Imgbar {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
+  @media (max-width: 630px) {
+    height: 111px;
+  }
+  &__Text {
+    color: #fff;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 68.448px */
+    z-index: 1;
+    @media (max-width: 630px) {
+      font-size: 24px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.3); // Adjust the last value as needed
+    z-index: 0;
+    @media (max-width: 1300px) {
+      width: calc(100% - 40px);
+      right: 20px;
+      left: 20px;
+      @media (max-width: 630px) {
+        height: 111px;
+      }
+    }
+  }
+}

@@ -11,37 +11,31 @@ li {
   padding: 45px;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 630px) {
+    padding: 20px;
+    justify-content: start;
+    gap: 43px;
+  }
+
   &__menu {
     display: flex;
     gap: 57px;
+    @media (max-width: 630px) {
+      gap: 26px;
+    }
     &__li {
       font-size: 24px;
       color: #ff6060;
       white-space: nowrap;
-    }
-  }
-  //   &__Logo {
-  //     &__Img {
-  //       width: 210px;
-  //       height: 68px;
-  //     }
-  //   }
-}
-
-@media (max-width: 560px) {
-  .Header {
-    padding: 20px;
-    justify-content: start;
-    gap: 43px;
-    &__menu {
-      gap: 26px;
-      &__li {
+      @media (max-width: 630px) {
         font-size: 12px;
         font-weight: 500;
       }
     }
-    &__Logo {
-      &__Img {
+  }
+  &__Logo {
+    &__Img {
+      @media (max-width: 630px) {
         width: 145px;
         height: 46.881px;
         flex-shrink: 0;
