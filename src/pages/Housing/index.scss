@@ -1,0 +1,35 @@
+.Housing {
+  padding: 20px;
+  color: #ff6060;
+  &__Info {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    &__Left {
+      &__Title {
+        color: #ff6060;
+        font-size: 36px;
+        font-weight: 500;
+        margin: 0;
+      }
+      &__Description {
+        font-size: 18px;
+        max-width: 50%;
+      }
+    }
+    &__Right {
+      &__Host {
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        gap: 10px;
+        &__Name {
+          max-width: 30%;
+        }
+        &__Picture {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
