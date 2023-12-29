@@ -16,6 +16,7 @@ function Home() {
         {logements.map((logement, index) => (
           <Thumb
             key={index}
+            id={logement.id}
             className="Home__ThumbList__Thumb"
             text={logement.title}
             img={logement.cover}
