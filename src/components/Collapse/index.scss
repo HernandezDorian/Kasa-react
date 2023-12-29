@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  max-width: 1024px;
+  background-color: #f6f6f6;
   &__Menu {
     display: flex;
     background-color: #ff6060;
@@ -26,12 +27,51 @@
     flex-direction: column;
     max-width: 1024px;
     background-color: #f6f6f6;
-
+    align-self: flex-start;
+    color: #ff6060;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.6%; /* 25.668px */
+    overflow: hidden;
+    max-height: 0;
     ul {
-      display: flex;
-      flex-direction: column;
-      align-self: start;
-      margin-left: auto;
+      padding: 20px;
     }
+
+    &.open {
+      animation: openAnimation 4s forwards;
+    }
+    &.close {
+      animation: none;
+    }
+    // &.close-no-animation {
+    //   animation: closeAnimation 0s forwards;
+    // }
+    .no-animation {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+}
+
+@keyframes openAnimation {
+  0% {
+    // max-height: 0;
+  }
+  100% {
+    overflow: visible;
+    max-height: 2000px;
+    visibility: visible;
+  }
+}
+@keyframes closeAnimation {
+  0% {
+    max-height: 2000px;
+  }
+
+  100% {
+    max-height: 0;
+    visibility: hidden;
   }
 }

@@ -11,6 +11,12 @@ function About() {
           <li>Content Test</li>
         </ul>
       </Collapse>
+      <Collapse className={"About__Collapse"} Title="Test2">
+        <ul>
+          <li>Content Test 2</li>
+          <li>Content Test 2</li>
+        </ul>
+      </Collapse>
     </div>
   );
 }
