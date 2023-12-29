@@ -1,5 +1,19 @@
+:root {
+  --actual-max-height: 2000px;
+}
+
+.Load {
+  width: 100px;
+  height: 100px;
+  // background-color: red;
+  border-radius: 50%;
+  border-bottom: 5px solid #ff6060;
+  animation: rotate 300ms forwards;
+}
+
 .Collapse {
   display: flex;
+  animation: loadErease 300ms forwards;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -35,6 +49,7 @@
     line-height: 142.6%; /* 25.668px */
     overflow: hidden;
     max-height: 0;
+
     ul {
       padding: 20px;
     }
@@ -43,19 +58,20 @@
       animation: openAnimation 4s forwards;
     }
     &.close {
-      animation: none;
+      animation: closeAnimation 1s forwards;
     }
     // &.close-no-animation {
     //   animation: closeAnimation 0s forwards;
     // }
     .no-animation {
       transition: none !important;
-      animation: none !important;
+      animation: closeAnimation 0 forwards !important;
     }
   }
 }
 
 @keyframes openAnimation {
+  // $ActualMaxHeight: 2000px;
   0% {
     // max-height: 0;
   }
@@ -67,11 +83,32 @@
 }
 @keyframes closeAnimation {
   0% {
-    max-height: 2000px;
+    // max-height: $ActualMaxHeight;
+    max-height: var(--actual-max-height);
   }
 
   100% {
     max-height: 0;
     visibility: hidden;
+  }
+}
+@keyframes loadErease {
+  0% {
+    display: none;
+  }
+  99% {
+    display: none;
+  }
+  100% {
+    display: flex;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1440deg);
+    display: none;
   }
 }

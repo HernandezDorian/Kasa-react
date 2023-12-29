@@ -9,24 +9,31 @@ function Collapse({ Title, className, children }) {
 
   useEffect(() => {
     setIsFirstRender(false);
+    document.documentElement.style.setProperty("--actual-max-height", "0");
   }, []);
 
-  useEffect(() => {
-    if (!isFirstRender) {
-      const element = document.querySelector(".Collapse__Content");
-      if (element) {
-        element.classList.remove("no-animation");
-      }
-    }
-  }, [isFirstRender]);
+  // useEffect(() => {
+  //   if (!isFirstRender) {
+  //     const element = document.querySelector(".Collapse__Content");
+  //     if (element) {
+  //       element.classList.remove("no-animation");
+  //     }
+  //   }
+  // }, [isFirstRender]);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
+    document.documentElement.style.setProperty("--actual-max-height", "2000px");
+    // const element = document.querySelector(".Collapse__Content");
+    // if (element) {
+    //   element.classList.remove("no-animation");
+    // }
   };
 
   // useEffect(() => {
   //   const element = document.querySelector(".Collapse__Content");
   //   if (element) {
+  //     console.log(element);
   //     element.classList.remove("no-animation");
   //   }
   // }, []);
@@ -36,19 +43,22 @@ function Collapse({ Title, className, children }) {
   // };
 
   return (
-    <div className="Collapse">
-      <div className={`Collapse__Menu ${className}`} onClick={handleToggle}>
-        <p className="Collapse__Menu__Title">{Title}</p>
-        {isOpen ? <ArrowTOc /> : <ArrowTOp />}
+    <React.Fragment>
+      <div className="Load"></div>
+      <div className="Collapse">
+        <div className={`Collapse__Menu ${className}`} onClick={handleToggle}>
+          <p className="Collapse__Menu__Title">{Title}</p>
+          {isOpen ? <ArrowTOc /> : <ArrowTOp />}
+        </div>
+        <div
+          className={`Collapse__Content
+        ${isFirstRender ? "no-animation" : ""} 
+          ${isOpen && !isFirstRender ? "open" : "close"}`}
+        >
+          {children}
+        </div>
       </div>
-      <div
-        className={`Collapse__Content ${isFirstRender ? "no-animation" : ""} ${
-          isOpen ? "open" : "close"
-        }`}
-      >
-        {children}
-      </div>
-    </div>
+    </React.Fragment>
   );
 }
 
