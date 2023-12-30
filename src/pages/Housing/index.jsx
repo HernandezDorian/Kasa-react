@@ -2,6 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import Carrousel from "../../components/Carrousel";
 import Tags from "../../components/Tags";
+import Stars from "../../components/Stars";
 import logements from "./../../logements.json";
 import "./index.scss";
 
@@ -49,6 +50,7 @@ function Housing() {
               src={logement.host.picture}
             ></img>
           </div>
+          <Stars>{logement.rating}</Stars>
         </div>
       </div>
     </div>
