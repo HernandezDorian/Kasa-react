@@ -1,9 +1,10 @@
 .Housing {
-  padding: 20px;
+  padding: 0 18% 0 18%;
   color: #ff6060;
   &__Info {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: 24px;
     &__Left {
       &__Title {
@@ -14,7 +15,6 @@
       }
       &__Description {
         font-size: 18px;
-        max-width: 50%;
       }
     }
     &__Right {

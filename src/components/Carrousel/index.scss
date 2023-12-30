@@ -1,3 +1,42 @@
 .Carrousel {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  &__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 415px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    &__Arrow {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+      &__Left {
+        padding: 20px;
+        cursor: pointer;
+      }
+      &__Right {
+        padding: 20px;
+        cursor: pointer;
+      }
+    }
+    &__Counter {
+      margin-top: auto;
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 142.6%; /* 25.668px */
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+  }
 }

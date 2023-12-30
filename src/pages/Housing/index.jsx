@@ -34,7 +34,7 @@ function Housing() {
         <div className="Housing__Info__Left">
           <h1 className="Housing__Info__Left__Title">{logement.title}</h1>
           <p className="Housing__Info__Left__Description">
-            {logement.description}
+            {logement.location}
           </p>
           <Tags tags={logement.tags} />
         </div>
