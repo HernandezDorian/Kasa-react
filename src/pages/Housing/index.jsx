@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Carrousel from "../../components/Carrousel";
 import Tags from "../../components/Tags";
 import Stars from "../../components/Stars";
+import Collapse from "../../components/Collapse";
 import logements from "./../../logements.json";
 import "./index.scss";
 
@@ -52,6 +53,28 @@ function Housing() {
           </div>
           <Stars>{logement.rating}</Stars>
         </div>
+      </div>
+      <div className="Housing__Collapses">
+        <Collapse
+          className={"Housing__Collapses__Collapse"}
+          Title="Description"
+        >
+          <ul>
+            <p className={"Housing__Collapses__Collapse__Content"}>
+              {logement.description}
+            </p>
+          </ul>
+        </Collapse>
+        <Collapse
+          className={"Housing__Collapses__Collapse"}
+          Title="Équipements"
+        >
+          <ul className={"Housing__Collapses__Collapse__Content"}>
+            {logement.equipments.map((equipement, index) => (
+              <li key={`${index}-${equipement}`}>{equipement}</li>
+            ))}
+          </ul>
+        </Collapse>
       </div>
     </div>
   );

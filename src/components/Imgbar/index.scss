@@ -12,7 +12,7 @@
   @media (max-width: 1300px) {
     width: 100%;
   }
-  @media (max-width: 630px) {
+  @media (max-width: 768px) {
     height: 111px;
   }
   &__Text {
@@ -22,7 +22,7 @@
     font-weight: 500;
     line-height: 142.6%; /* 68.448px */
     z-index: 1;
-    @media (max-width: 630px) {
+    @media (max-width: 768px) {
       font-size: 24px;
     }
   }
@@ -40,7 +40,7 @@
       width: calc(100% - 40px);
       right: 20px;
       left: 20px;
-      @media (max-width: 630px) {
+      @media (max-width: 768px) {
         height: 111px;
       }
     }

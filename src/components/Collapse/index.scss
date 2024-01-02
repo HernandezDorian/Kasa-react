@@ -17,8 +17,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   // max-width: 1024px;
-  background-color: #f6f6f6;
+  // background-color: #f6f6f6;
   &__Menu {
     display: flex;
     background-color: #ff6060;
@@ -41,6 +42,7 @@
     flex-direction: column;
     max-width: 1024px;
     background-color: #f6f6f6;
+    width: 100%;
     align-self: flex-start;
     color: #ff6060;
     font-size: 18px;
@@ -59,6 +61,7 @@
     }
     &.close {
       animation: closeAnimation 500ms forwards;
+      visibility: hidden;
     }
     // &.close-no-animation {
     //   animation: closeAnimation 0s forwards;

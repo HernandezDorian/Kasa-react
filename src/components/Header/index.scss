@@ -11,7 +11,7 @@ li {
   padding: 45px;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 630px) {
+  @media (max-width: 768px) {
     padding: 20px;
     justify-content: start;
     gap: 43px;
@@ -20,14 +20,14 @@ li {
   &__menu {
     display: flex;
     gap: 57px;
-    @media (max-width: 630px) {
+    @media (max-width: 768px) {
       gap: 26px;
     }
     &__li {
       font-size: 24px;
       color: #ff6060;
       white-space: nowrap;
-      @media (max-width: 630px) {
+      @media (max-width: 768px) {
         font-size: 12px;
         font-weight: 500;
       }
@@ -35,7 +35,7 @@ li {
   }
   &__Logo {
     &__Img {
-      @media (max-width: 630px) {
+      @media (max-width: 768px) {
         width: 145px;
         height: 46.881px;
         flex-shrink: 0;

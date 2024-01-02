@@ -12,5 +12,9 @@
     font-weight: 500;
     align-items: center;
     justify-content: center;
+    @media (max-width: 768px) {
+      font-size: 10px;
+      padding: 2px 11px 2px 11px;
+    }
   }
 }

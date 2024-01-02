@@ -45,7 +45,7 @@ function Collapse({ Title, className, children }) {
   return (
     <React.Fragment>
       <div className="Load"></div>
-      <div className="Collapse">
+      <div className={`Collapse`}>
         <div className={`Collapse__Menu ${className}`} onClick={handleToggle}>
           <p className="Collapse__Menu__Title">{Title}</p>
           {isOpen ? <ArrowTOc /> : <ArrowTOp />}
