@@ -5,10 +5,10 @@
   justify-content: center;
   color: #ff6060;
   gap: 139px;
-  margin: 139px 0 129px 0;
+  margin: 139px auto 129px auto;
   @media (max-width: 768px) {
     gap: 113px;
-    margin: 113px 0 113px 0;
+    margin: 113px auto 113px auto;
   }
   &__404 {
   }

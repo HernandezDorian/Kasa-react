@@ -18,7 +18,7 @@ function Error() {
   }, []);
 
   return (
-    <div className="Error">
+    <main className="Error">
       {isOnMobile ? (
         <SVGsmall className="Error__404" />
       ) : (
@@ -31,7 +31,7 @@ function Error() {
       <Link className="Error__Link" to="/">
         Retourner sur la page d’accueil
       </Link>
-    </div>
+    </main>
   );
 }
 

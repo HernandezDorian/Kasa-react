@@ -15,29 +15,33 @@ function Carrousel({ img }) {
           backgroundImage: `url(${img[imgCount]})`,
         }}
       >
-        <div className="Carrousel__img__Arrow">
-          <ArrowLeft
-            className="Carrousel__img__Arrow__Left"
-            onClick={() => {
-              if (imgCount === 0) {
-                setimgCount(maxImg);
-              } else {
-                setimgCount(imgCount - 1);
-              }
-            }}
-          ></ArrowLeft>
-          <ArrowRight
-            className="Carrousel__img__Arrow__Right"
-            onClick={() => {
-              if (imgCount === maxImg) {
-                setimgCount(0);
-              } else {
-                setimgCount(imgCount + 1);
-              }
-            }}
-          ></ArrowRight>
-        </div>
-        <span className="Carrousel__img__Counter">{Counter}</span>
+        {maxImg > 1 && (
+          <div className="Carrousel__img__Arrow">
+            <ArrowLeft
+              className="Carrousel__img__Arrow__Left"
+              onClick={() => {
+                if (imgCount === 0) {
+                  setimgCount(maxImg);
+                } else {
+                  setimgCount(imgCount - 1);
+                }
+              }}
+            ></ArrowLeft>
+            <ArrowRight
+              className="Carrousel__img__Arrow__Right"
+              onClick={() => {
+                if (imgCount === maxImg) {
+                  setimgCount(0);
+                } else {
+                  setimgCount(imgCount + 1);
+                }
+              }}
+            ></ArrowRight>
+          </div>
+        )}
+        {maxImg > 1 && (
+          <span className="Carrousel__img__Counter">{Counter}</span>
+        )}
       </div>
       {/* {img.map((image, index) => (
         <div

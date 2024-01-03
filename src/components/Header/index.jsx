@@ -1,26 +1,39 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ReactComponent as Logo } from "./../../assets/logo.svg";
 import "./index.scss";
 
 function Header() {
+  const location = useLocation();
   return (
-    <nav className="Header">
+    <header className="Header">
       <Link to="/" className="Header__Logo">
-        <Logo className="Header__Logo__Img" alt="Logo Kasa"></Logo>
+        <h1>
+          <Logo className="Header__Logo__Img" alt="Kasa"></Logo>
+        </h1>
       </Link>
-      <ul className="Header__menu">
-        <li className="Header__menu__li">
-          <Link className="Link" to="/">
-            Accueil
-          </Link>
-        </li>
-        <li className="Header__menu__li">
-          <Link className="Link" to="/about">
-            A propos
-          </Link>
-        </li>
-      </ul>
-    </nav>
+      <nav>
+        <ul className="Header__menu">
+          <li
+            className={`Header__menu__li${
+              location.pathname === "/" ? " Underline" : ""
+            }`}
+          >
+            <Link className="Link" to="/">
+              Accueil
+            </Link>
+          </li>
+          <li
+            className={`Header__menu__li${
+              location.pathname === "/about" ? " Underline" : ""
+            }`}
+          >
+            <Link className="Link" to="/about">
+              A propos
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 

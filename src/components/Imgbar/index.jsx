@@ -8,7 +8,7 @@ function Imgbar({ text, img, className }) {
         backgroundImage: `url(${img})`,
       }}
     >
-      <p className="Imgbar__Text">{text}</p>
+      <h2 className="Imgbar__Text">{text}</h2>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import logements from "./../../logements.json";
 
 function Home() {
   return (
-    <div className="Home">
+    <main className="Home">
       <Imgbar
         className="Home__Imgbar"
         text="Chez vous, partout et ailleurs"
@@ -23,7 +23,7 @@ function Home() {
           />
         ))}
       </div>
-    </div>
+    </main>
   );
 }
 

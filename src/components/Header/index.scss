@@ -6,6 +6,10 @@ li {
   margin: 0;
 }
 
+.Underline {
+  text-decoration: underline;
+}
+
 .Header {
   display: flex;
   padding: 45px;
@@ -13,7 +17,6 @@ li {
   align-items: center;
   @media (max-width: 768px) {
     padding: 20px;
-    justify-content: start;
     gap: 43px;
   }
 

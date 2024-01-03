@@ -5,44 +5,42 @@ import background from "../../assets/BgAbout.jpg";
 
 function About() {
   return (
-    <div className="About">
+    <main className="About">
       <Imgbar className="About__Imgbar" text="" img={background} />
       <div className="About__CollapseList">
         <Collapse className={"About__CollapseList__Collapse"} Title="Fiabilité">
-          <ul>
-            <li>Content Test</li>
-            <li>Content a Test</li>
-          </ul>
+          <p className={"About__CollapseList__Collapse__Txt"}>
+            Les annonces postées sur Kasa garantissent une fiabilité totale. Les
+            photos sont conformes aux logements, et toutes les informations sont
+            régulièrement vérifiées par nos équipes.
+          </p>
         </Collapse>
         <Collapse className={"About__CollapseList__Collapse"} Title="Respect">
-          <ul>
-            <li>Content aa Test 2</li>
-            <li>Content Test 2</li>
-            <li>Content Test 2</li>
-          </ul>
+          <p className={"About__CollapseList__Collapse__Txt"}>
+            La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
+            comportement discriminatoire ou de perturbation du voisinage
+            entraînera une exclusion de notre plateforme.
+          </p>
         </Collapse>
         <Collapse className={"About__CollapseList__Collapse"} Title="Service">
-          <ul>
-            <li>Content Test 3</li>
-            <li>Content aaa aaaaa aaaa Test 3</li>
-            <li>Content a Test 3</li>
-            <li>Content Test 3</li>
-          </ul>
+          <p className={"About__CollapseList__Collapse__Txt"}>
+            La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
+            comportement discriminatoire ou de perturbation du voisinage
+            entraînera une exclusion de notre plateforme.
+          </p>
         </Collapse>
         <Collapse className={"About__CollapseList__Collapse"} Title="Sécurité">
-          <ul>
-            <li>Content aaaa Test 4</li>
-            <li>Content aaaa aa Test 4</li>
-            <li>Content Test 4</li>
-            <li>Content aa aaaaATest 4</li>
-            <li>Content Test 4</li>
-            <li>Content Test 4</li>
-            <li>Content AAA AAAA aaaTest 4</li>
-            <li>Content aaa aaa aaaaaaa Test 4</li>
-          </ul>
+          <p className={"About__CollapseList__Collapse__Txt"}>
+            La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
+            pour les voyageurs, chaque logement correspond aux critères de
+            sécurité établis par nos services. En laissant une note aussi bien à
+            l'hôte qu'au locataire, cela permet à nos équipes de vérifier que
+            les standards sont bien respectés. Nous organisons également des
+            ateliers sur la sécurité domestique pour nos hôtes.
+          </p>
         </Collapse>
       </div>
-    </div>
+    </main>
   );
 }
 

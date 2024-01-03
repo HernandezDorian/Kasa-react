@@ -8,9 +8,9 @@ function Stars({ children }) {
     <div className="Stars">
       {[...Array(5)].map((_, i) =>
         i < Rating ? (
-          <StarActive className="Stars__Star" />
+          <StarActive key={`StarActive - ${i}`} className="Stars__Star" />
         ) : (
-          <StarInactive className="Stars__Star" />
+          <StarInactive key={`StarInactive - ${i}`} className="Stars__Star" />
         )
       )}
     </div>

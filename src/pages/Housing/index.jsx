@@ -24,7 +24,7 @@ function Housing() {
   }
 
   return (
-    <div className="Housing">
+    <main className="Housing">
       <Carrousel img={logement.pictures} />
       {/* <img
         className="Housing__Cover"
@@ -76,7 +76,7 @@ function Housing() {
           </ul>
         </Collapse>
       </div>
-    </div>
+    </main>
   );
 }
 
