@@ -3,12 +3,12 @@ import { ReactComponent as ArrowLeft } from "./../../assets/ArrowLeft.svg";
 import { ReactComponent as ArrowRight } from "./../../assets/ArrowRight.svg";
 import { useState } from "react";
 
-function Carrousel({ img }) {
+function Carrousel({ img, className }) {
   const [imgCount, setimgCount] = useState(0);
   const maxImg = img.length - 1;
   const Counter = `${imgCount + 1}/${maxImg + 1}`;
   return (
-    <div className="Carrousel">
+    <div className={`Carrousel ${className}`}>
       <div
         className="Carrousel__img"
         style={{

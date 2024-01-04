@@ -25,12 +25,7 @@ function Housing() {
 
   return (
     <main className="Housing">
-      <Carrousel img={logement.pictures} />
-      {/* <img
-        className="Housing__Cover"
-        alt="Logement"
-        src={logement.pictures[0]}
-      ></img> */}
+      <Carrousel img={logement.pictures} className="Housing__Carrousel" />
 
       <div className="Housing__Info">
         <div className="Housing__Info__Left">

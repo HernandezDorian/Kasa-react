@@ -1,9 +1,15 @@
 .Housing {
-  padding: 0 18% 0 18%;
   color: #ff6060;
   // @media (max-width: 768px) {
   //   padding: 0 5% 0 5%;
   // }
+  &__Carrousel {
+    width: 70%;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
   &__Info {
     display: flex;
     align-items: center;
@@ -44,7 +50,6 @@
       }
       &__Host {
         display: flex;
-        // align-items: center;
         justify-content: center;
         gap: 10px;
         &__Name {
@@ -63,14 +68,19 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    width: 100%;
+
     gap: 76px;
     margin-bottom: 100px;
     margin-top: 24px;
+    margin: 10px auto;
+    width: 80%;
     @media (max-width: 1300px) {
       align-items: center;
       flex-direction: column;
       gap: 20px;
+    }
+    @media (max-width: 425px) {
+      width: 80%;
     }
     &__Collapse {
       width: 100%;
