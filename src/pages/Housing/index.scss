@@ -3,14 +3,24 @@
   // @media (max-width: 768px) {
   //   padding: 0 5% 0 5%;
   // }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
   &__Carrousel {
-    width: 70%;
-    margin: 0 auto;
+    width: 100%;
+
     @media (max-width: 768px) {
       width: 100%;
     }
   }
   &__Info {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,6 +31,7 @@
     &__Left {
       @media (max-width: 768px) {
         margin-right: auto;
+        width: 100%;
       }
 
       &__Title {
@@ -73,7 +84,7 @@
     margin-bottom: 100px;
     margin-top: 24px;
     margin: 10px auto;
-    width: 80%;
+    width: 100%;
     @media (max-width: 1300px) {
       align-items: center;
       flex-direction: column;

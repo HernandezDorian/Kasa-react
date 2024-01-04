@@ -26,10 +26,20 @@
       &__Left {
         padding: 20px;
         cursor: pointer;
+        @media (max-width: 425px) {
+          width: 24px;
+          height: 24px;
+          padding: 10px;
+        }
       }
       &__Right {
         padding: 20px;
         cursor: pointer;
+        @media (max-width: 425px) {
+          width: 24px;
+          height: 24px;
+          padding: 10px;
+        }
       }
     }
     &__Counter {
