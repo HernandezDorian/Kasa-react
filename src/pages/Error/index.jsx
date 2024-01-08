@@ -5,11 +5,11 @@ import { ReactComponent as SVGsmall } from "./../../assets/404small.svg";
 import React, { useState, useEffect } from "react";
 
 function Error() {
-  const [isOnMobile, setisOnMobile] = useState(window.innerWidth < 630);
+  const [isOnMobile, setisOnMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
     const checkMobile = () => {
-      setisOnMobile(window.innerWidth < 630);
+      setisOnMobile(window.innerWidth < 768);
     };
 
     window.addEventListener("resize", checkMobile);

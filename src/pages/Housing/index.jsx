@@ -54,11 +54,9 @@ function Housing() {
           className={"Housing__Collapses__Collapse"}
           Title="Description"
         >
-          <ul>
-            <p className={"Housing__Collapses__Collapse__Content"}>
-              {logement.description}
-            </p>
-          </ul>
+          <p className={"Housing__Collapses__Collapse__Content"}>
+            {logement.description}
+          </p>
         </Collapse>
         <Collapse
           className={"Housing__Collapses__Collapse"}

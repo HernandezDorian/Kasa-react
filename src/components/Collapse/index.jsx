@@ -12,35 +12,10 @@ function Collapse({ Title, className, children }) {
     document.documentElement.style.setProperty("--actual-max-height", "0");
   }, []);
 
-  // useEffect(() => {
-  //   if (!isFirstRender) {
-  //     const element = document.querySelector(".Collapse__Content");
-  //     if (element) {
-  //       element.classList.remove("no-animation");
-  //     }
-  //   }
-  // }, [isFirstRender]);
-
   const handleToggle = () => {
     setIsOpen(!isOpen);
     document.documentElement.style.setProperty("--actual-max-height", "2000px");
-    // const element = document.querySelector(".Collapse__Content");
-    // if (element) {
-    //   element.classList.remove("no-animation");
-    // }
   };
-
-  // useEffect(() => {
-  //   const element = document.querySelector(".Collapse__Content");
-  //   if (element) {
-  //     console.log(element);
-  //     element.classList.remove("no-animation");
-  //   }
-  // }, []);
-
-  // const handleToggle = () => {
-  //   setIsOpen(!isOpen);
-  // };
 
   return (
     <React.Fragment>

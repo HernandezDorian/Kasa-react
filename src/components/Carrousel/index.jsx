@@ -43,17 +43,6 @@ function Carrousel({ img, className }) {
           <span className="Carrousel__img__Counter">{Counter}</span>
         )}
       </div>
-      {/* {img.map((image, index) => (
-        <div
-          key={index}
-          className="Carrousel__img"
-          // alt="Logement"
-          // src={image}
-          style={{
-            backgroundImage: `url(${image})`,
-          }}
-        ></div>
-      ))} */}
     </div>
   );
 }
