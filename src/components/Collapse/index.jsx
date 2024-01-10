@@ -23,7 +23,11 @@ function Collapse({ Title, className, children }) {
       <div className={`Collapse`}>
         <div className={`Collapse__Menu ${className}`} onClick={handleToggle}>
           <p className="Collapse__Menu__Title">{Title}</p>
-          {isOpen ? <ArrowTOc /> : <ArrowTOp />}
+          {isOpen ? (
+            <ArrowTOc className="Collapse__Menu__Arrow" />
+          ) : (
+            <ArrowTOp className="Collapse__Menu__Arrow" />
+          )}
         </div>
         <div
           className={`Collapse__Content
