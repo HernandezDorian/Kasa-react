@@ -9,7 +9,7 @@
     position: relative;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 375px) {
     width: 95%;
   }
   &__Imgbar {
@@ -30,13 +30,14 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding-top: 50px;
+      padding-left: 0;
+      padding-right: 0;
     }
     @media (max-width: 768px) {
       // width: 100%;
       gap: 20px;
     }
-    @media (max-width: 425px) {
+    @media (max-width: 375px) {
       background-color: white;
       padding: 0;
       gap: 20px;
@@ -45,14 +46,14 @@
       @media (max-width: 768px) {
         // width: 100% !important;
       }
-      @media (max-width: 425px) {
+      @media (max-width: 375px) {
         width: 100% !important;
       }
       &:before {
         @media (max-width: 768px) {
           // width: 100% !important;
         }
-        @media (max-width: 425px) {
+        @media (max-width: 375px) {
           width: 100% !important;
         }
       }

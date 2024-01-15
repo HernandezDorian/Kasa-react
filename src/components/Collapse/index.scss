@@ -29,13 +29,13 @@
     // padding: 10px;
     border-radius: 10px;
     height: 52px;
-    @media (max-width: 425px) {
+    @media (max-width: 375px) {
       height: 30px;
       border-radius: 5px;
     }
     &__Arrow {
       padding-right: 10px;
-      @media (max-width: 425px) {
+      @media (max-width: 375px) {
         width: 16px;
       }
     }
@@ -47,7 +47,7 @@
       line-height: 142.6%; /* 25.668px */
       user-select: none;
       padding-left: 10px;
-      @media (max-width: 425px) {
+      @media (max-width: 375px) {
         font-size: 13px;
       }
     }
@@ -66,7 +66,7 @@
     overflow: hidden;
     max-height: 0;
     white-space: wrap;
-    @media (max-width: 425px) {
+    @media (max-width: 375px) {
       font-size: 12px;
     }
     ul {
