@@ -40,6 +40,9 @@ li {
     }
   }
   &__Logo {
+    height: 68px;
+    display: flex;
+    align-items: center;
     &__Img {
       @media (max-width: 768px) {
         width: 145px;
